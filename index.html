@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--- <script src="calculo_parametro_geral.js"></script> --->
+<script src="Script_CalParam.js"></script> 
+<html lang="pt-br">
+<br>
+<head>
+<center><h1>Base de Calculo por paramétros</h1></center>
+<center><p>Aqui você vai criar paramétros personalizados para sua classe!</p></center>
+<hr>
+<center><h4>Primeiramente, precisamos de alguns numéros base para fazermos os calculos:</h4></center>
+<center><input id="levelMax" value="30" size="1"></center> <!--Usado para definir o nível maximo.-->
+<br>
+<center><h4>Agora definir valores mínimos:</h4></center>
+<center>HP Mínimo / MP Mínimo / ATK Mínimo / DEF Mínima / MAT Mínimo / MDF Mínima / AGI Mínimo / LCK Mínimo</center>
+<center><input id="HPMin" value="60" size="7"> / <input id="MPMin" value="40" size="7"> / <input id="ATKMin" value="2" size="7"> / <input id="DEFMin" value="1" size="7"> / <input id="MATMin" value="1" size="7"> / <input id="MDFMin" value="2" size="7"> / <input id="AGIMin" value="5" size="7"> / <input id="LCKMin" value="10" size="7"></center>
+<br>
+<center><h4>Agora definir um níveis maximos para os parametros:</h4></center>
+<center>HP Máximo / MP Máximo / ATK Máximo / DEF Máxima / MAT Máximo / MDF Máxima / AGI Máximo / LCK Máximo</center>
+<center><input id="HPMax" value="4500" size="7"> / <input id="MPMax" value="2500" size="7"> / <input id="ATKMax" value="35" size="7"> / <input id="DEFMax" value="40" size="7"> / <input id="MATMax" value="30" size="7"> / <input id="MDFMax" value="35" size="7"> / <input id="AGIMax" value="50" size="7"> / <input id="LCKMax" value="100" size="7"></center>
+<br>
+<center><h4>Defina a porcentagem de acrêcimo até o valor máximo:</h4></center>
+<center>HP % / MP % / ATK % / DEF % / MAT % / MDF % / AGI % / LCK %</center>
+<center><input id="HP%" maxlength="3" size="2"> / <input id="MP%" maxlength="3" size="2"> / <input id="ATK%" maxlength="3" size="2"> / <input id="DEF%" maxlength="3" size="2"> / <input id="MAT%" maxlength="3" size="2"> / <input id="MDF%" maxlength="3" size="2"> / <input id="AGI%" maxlength="3" size="2"> / <input id="LCK%" maxlength="3" size="2"></center>
+<br>
+<center><button type="button" onclick="Calcular()">Calcular</button></center>
+<br>
+<center><button type="button" onclick="CalcularHP()">Calcular HP</button> | <button type="button" onclick="CalcularMP()">Calcular MP</button> | <button type="button" onclick="CalcularATK()">Calcular ATK</button>| <button type="button" onclick="CalcularDEF()">Calcular DEF</button></center>
+<br>
+<center><button type="button" onclick="CalcularMAT()">Calcular MAT</button> | <button type="button" onclick="CalcularMDF()">Calcular MDF</button> | <button type="button" onclick="CalcularAGI()">Calcular AGI</button>| <button type="button" onclick="CalcularLCK()">Calcular LCK</button></center>
+<hr>
+<Center><button type="button" onclick="Page_CalBattle()"> Calculadora de Batalha </button> </Center>
+</head>
+<body>
+
+<center><span id= "HPparPrint"></span>,<span id= "MPparPrint"></span>,<span id= "ATKparPrint"></span>,<span id= "DEFparPrint"></span>,<span id= "MATparPrint"></span>,<span id= "MDFparPrint"></span>,<span id= "AGIparPrint"></span>,<span id= "LCKparPrint"></span></center>
+
+</body>
+</html>

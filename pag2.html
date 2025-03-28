@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<script src="Script_CalBattle.js"></script> 
+
+<html lang="pt-br">
+<head>
+<title>Simulador de Batalha</title>
+    <center><h1>Status do Inimigo</h1></center>
+    <span>HP do Inimigo: </span><input id="b.hp" value="10" size="5">
+    <p></p>
+    <span>Ataque do Inimigo: </span><input id="b.atk" value="10" size="5">
+    <span>Defesa do Inimigo: </span><input id="b.def" value="10" size="5">
+    <br>
+    <hr>
+    <center><h1>Status do Jogador</h1></center>
+    <span>HP do Jogador: </span><input id="a.hp" value="10" size="5">
+    <p></p>
+    <span>Ataque do Jogador: </span><input id="a.atk" value="10" size="5">
+    <span>Defesa do Jogador: </span><input id="a.def" value="10" size="5">
+    <br>
+    <hr>
+    <center><h1>Opções Adicionais</h1></center> 
+    <span>Multiplicação (Ataque): </span><input id="multi_atk" value="4" size="5">
+    <span>Multiplicação (Defesa): </span><input id="multi_def" value="2" size="5">
+
+    <br>
+    <span>Quantidade de Golpes: </span><input id="qntHit" value="1" size="5">
+    <span>Variação: </span><input id="vardmg" value="20" size="5">
+    <br>
+    <center><h3>Equipamentos</h3></center>
+    <br>Arma</br>
+    <span>ATK: </span><input id="e1.atk" value="10" size="5"></span>
+
+    <!--- Calculo do de dano --->
+   <p></p>
+   <button type="button" onclick="SimularHit()">Simular Ataque</button>
+   <p><b>Dano Causado: </b><span id="calculo">00</span></p>
+    
+
+</head>
+<body>
+    <center><h3>Calculo de batalha:</h3></center>
+
+    <center><button type="button" onclick="Page_ParamCalcule()">Pagina Anterior</button></center>
+</body>
+</html>
